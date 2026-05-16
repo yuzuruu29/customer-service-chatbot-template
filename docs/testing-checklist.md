@@ -1,29 +1,44 @@
 # Chatbot Testing Checklist
 
-Before launching your chatbot to the public, go through this checklist to ensure a smooth customer experience.
+Use this before handing the demo to a client or publishing it online.
 
-## ✅ Functionality
-- [ ] Bot triggers correctly when the page loads or the bubble is clicked.
-- [ ] Welcome message is friendly and clear.
-- [ ] Main menu buttons (if any) work as expected.
-- [ ] Bot can handle basic "Hello" and "How are you?" messages.
+## Website
 
-## ✅ Knowledge Base
-- [ ] Bot accurately answers location and business hours questions.
-- [ ] Bot knows the current prices of services/products.
-- [ ] Bot correctly identifies when it doesn't know an answer and offers to connect to a human.
+- [ ] All navigation links scroll to the correct page sections.
+- [ ] `website/hero.png` loads.
+- [ ] The page is readable on mobile, tablet, and desktop.
+- [ ] Pricing is marked as final or clearly replaced with client-approved pricing.
+- [ ] The contact form is either connected to a real endpoint or clearly marked as demo-only.
+- [ ] No placeholder social links are shown as real links.
 
-## ✅ Local Context
-- [ ] Bot understands Taglish/Tagalog queries.
-- [ ] Currency is correctly mentioned as "PHP" or "₱".
-- [ ] Tone is appropriate for the business (e.g., formal for clinics, casual for cafes).
+## Botpress
 
-## ✅ Lead Generation
-- [ ] Contact form on the website works.
-- [ ] Bot correctly collects customer name and contact info if asked.
-- [ ] Data is being sent to your email or CRM.
+- [ ] Bot imports successfully into Botpress v12.
+- [ ] NLU model is trained after import.
+- [ ] Each intent has enough phrases for the client's language mix.
+- [ ] Fallback response gives a useful next step.
+- [ ] Webchat integration is enabled.
+- [ ] The website uses the client's real Botpress Webchat embed code.
 
-## ✅ Mobile Experience
-- [ ] Chat bubble doesn't block important website text.
-- [ ] Keyboard on mobile doesn't hide the text input field.
-- [ ] Page loads quickly on a 4G/LTE connection.
+## Restaurant FAQ Coverage
+
+- [ ] Opening hours are correct.
+- [ ] Location, parking, and contact details are correct.
+- [ ] Menu, prices, and dietary options are current.
+- [ ] Reservation and cancellation policies are accurate.
+- [ ] Takeaway and delivery coverage is accurate.
+- [ ] Payment methods are accurate and approved by the client.
+
+## Security and Privacy
+
+- [ ] No API keys, Botpress tokens, payment keys, or passwords are committed.
+- [ ] Any real contact form validates data server-side.
+- [ ] Customer messages are not logged with unnecessary personal data.
+- [ ] Privacy policy and terms links are added if the site collects leads.
+
+## Mobile Experience
+
+- [ ] Chat widget does not block important content.
+- [ ] Mobile keyboard does not hide the chat input.
+- [ ] Buttons are large enough to tap.
+- [ ] Page loads acceptably on a mobile connection.

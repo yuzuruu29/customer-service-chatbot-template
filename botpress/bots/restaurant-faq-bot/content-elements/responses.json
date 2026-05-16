@@ -3,7 +3,7 @@
     "id": "builtin_text-greeting",
     "contentType": "builtin_text",
     "formData": {
-      "text": "👋 Welcome to Bella Italia! I'm your virtual assistant. I can help with:\n\n• Opening hours\n• Menu & dietary options\n• Reservations\n• Location & contact info\n• Pricing\n• Takeaway & delivery\n\nWhat can I help you with today?",
+      "text": "Welcome to [Restaurant Name]. I am your virtual assistant. I can help with opening hours, menu questions, reservations, location, pricing, takeaway, and delivery. What can I help you with today?",
       "typing": true
     },
     "createdOn": "2026-05-17T00:00:00.000Z",
@@ -13,7 +13,7 @@
     "id": "builtin_text-opening_hours",
     "contentType": "builtin_text",
     "formData": {
-      "text": "🕐 Our opening hours are:\n\n• Monday – Thursday: 11:00 AM – 10:00 PM\n• Friday – Saturday: 11:00 AM – 11:00 PM\n• Sunday: 12:00 PM – 9:00 PM\n\nLast orders are taken 30 minutes before closing. Is there anything else I can help with?",
+      "text": "Our sample opening hours are Monday to Thursday, 11:00 AM to 10:00 PM; Friday to Saturday, 11:00 AM to 11:00 PM; and Sunday, 12:00 PM to 9:00 PM. Replace these with the client's real hours before launch.",
       "typing": true
     },
     "createdOn": "2026-05-17T00:00:00.000Z",
@@ -23,7 +23,7 @@
     "id": "builtin_text-reservation_info",
     "contentType": "builtin_text",
     "formData": {
-      "text": "🍽️ We'd love to have you! You can make a reservation by:\n\n• Calling us at (555) 123-4567\n• Emailing reservations@bellaitalia.com\n• Using our online booking at bellaitalia.com/book\n\nPlease let us know the date, time, and number of guests. Shall I help you with anything else?",
+      "text": "To make a reservation, please call [phone number] or email [reservation email]. Include your preferred date, time, and number of guests. Connect a booking tool before promising automated reservations.",
       "typing": true
     },
     "createdOn": "2026-05-17T00:00:00.000Z",
@@ -33,7 +33,7 @@
     "id": "builtin_text-menu_info",
     "contentType": "builtin_text",
     "formData": {
-      "text": "🍕 Our menu features authentic Italian cuisine including:\n\n• Starters: Bruschetta, Antipasto, Soups\n• Pasta: Carbonara, Bolognese, Cacio e Pepe\n• Pizza: Margherita, Diavola, Quattro Stagioni\n• Mains: Osso Buco, Salmon Piccata, Risotto\n• Desserts: Tiramisu, Panna Cotta, Cannoli\n\nView our full menu at bellaitalia.com/menu. Can I help with anything else?",
+      "text": "Our sample menu includes starters, pasta, pizza, mains, desserts, and drinks. Replace this with the client's real menu or link to the approved menu page.",
       "typing": true
     },
     "createdOn": "2026-05-17T00:00:00.000Z",
@@ -43,7 +43,7 @@
     "id": "builtin_text-location_info",
     "contentType": "builtin_text",
     "formData": {
-      "text": "📍 You can find us at:\n\n**Bella Italia**\n42 Olive Street, Downtown\nNew York, NY 10001\n\nWe're opposite Central Park and a 5-minute walk from Grand Central Station. Free street parking is available on weekends. Is there anything else I can help you with?",
+      "text": "You can find us at [restaurant address]. Add nearby landmarks, parking notes, and a verified map link before launch.",
       "typing": true
     },
     "createdOn": "2026-05-17T00:00:00.000Z",
@@ -53,7 +53,7 @@
     "id": "builtin_text-contact_info",
     "contentType": "builtin_text",
     "formData": {
-      "text": "📞 Here's how to reach us:\n\n• Phone: (555) 123-4567\n• Email: hello@bellaitalia.com\n• Instagram: @BellaItaliaRestaurant\n• Facebook: facebook.com/BellaItaliaRestaurant\n\nOur team is available during opening hours. Is there anything else I can assist with?",
+      "text": "You can reach us at [phone number], [email address], or [social media link]. Replace these placeholders with the client's real contact details.",
       "typing": true
     },
     "createdOn": "2026-05-17T00:00:00.000Z",
@@ -63,7 +63,7 @@
     "id": "builtin_text-dietary_info",
     "contentType": "builtin_text",
     "formData": {
-      "text": "🥗 We cater to a wide range of dietary needs:\n\n• **Vegetarian**: Marked with 🌿 on the menu\n• **Vegan**: Available on request\n• **Gluten-Free**: GF pasta and pizza bases available\n• **Nut-Free**: Please inform staff when ordering\n• **Halal**: Chicken and fish dishes are halal-certified\n\nAlways let your server know about any allergies. Can I help with anything else?",
+      "text": "We can answer questions about vegetarian, vegan, gluten-free, nut-free, halal, and other dietary options. Confirm the client's real allergy and dietary policies before launch.",
       "typing": true
     },
     "createdOn": "2026-05-17T00:00:00.000Z",
@@ -73,7 +73,7 @@
     "id": "builtin_text-pricing_info",
     "contentType": "builtin_text",
     "formData": {
-      "text": "💰 Here's an overview of our pricing:\n\n• Starters: $8 – $16\n• Pasta: $14 – $24\n• Pizza: $12 – $22\n• Mains: $18 – $38\n• Desserts: $7 – $12\n• Set lunch menu: $22 per person (Mon–Fri)\n\nDrinks are priced separately. We accept all major credit cards. Is there anything else you'd like to know?",
+      "text": "Menu prices must be replaced with the client's approved pricing before launch. If prices change often, link customers to the official menu instead of hardcoding exact amounts.",
       "typing": true
     },
     "createdOn": "2026-05-17T00:00:00.000Z",
@@ -83,7 +83,7 @@
     "id": "builtin_text-cancel_reservation_info",
     "contentType": "builtin_text",
     "formData": {
-      "text": "❌ To cancel your reservation, please:\n\n• Call us at (555) 123-4567\n• Email reservations@bellaitalia.com with your booking reference\n\n**Cancellation policy:**\nCancellations made less than 24 hours before the booking may incur a $10 per person fee for groups of 6 or more. Can I help you with anything else?",
+      "text": "To cancel or change a reservation, contact [phone number] or [reservation email]. Add the client's real cancellation policy before launch.",
       "typing": true
     },
     "createdOn": "2026-05-17T00:00:00.000Z",
@@ -93,7 +93,7 @@
     "id": "builtin_text-takeaway_info",
     "contentType": "builtin_text",
     "formData": {
-      "text": "🥡 Yes, we offer takeaway! Here's how:\n\n• **Phone**: Call (555) 123-4567 to pre-order\n• **Online**: Order at bellaitalia.com/order\n• **In-person**: Walk in and order at the counter\n\nCollection is available during all opening hours. Orders are usually ready in 20–30 minutes. Anything else I can help with?",
+      "text": "Takeaway details are not connected in this demo. Add the client's real ordering phone number, ordering link, pickup hours, and preparation time before launch.",
       "typing": true
     },
     "createdOn": "2026-05-17T00:00:00.000Z",
@@ -103,7 +103,7 @@
     "id": "builtin_text-delivery_info",
     "contentType": "builtin_text",
     "formData": {
-      "text": "🛵 We offer delivery through the following platforms:\n\n• **Uber Eats** – available until 10 PM\n• **DoorDash** – available until 9:30 PM\n• **Our own service** – within 3-mile radius, $3.99 fee, free over $40\n\nEstimated delivery time: 30–45 minutes. Minimum order for direct delivery: $20. Is there anything else I can help you with?",
+      "text": "Delivery details are placeholders in this demo. Add the client's real delivery areas, platforms, fees, minimum order, and estimated delivery time before launch.",
       "typing": true
     },
     "createdOn": "2026-05-17T00:00:00.000Z",
@@ -113,7 +113,7 @@
     "id": "builtin_text-fallback",
     "contentType": "builtin_text",
     "formData": {
-      "text": "🤔 I'm not quite sure I understood that. I can help with:\n\n• Opening hours\n• Menu & dietary options\n• Reservations & cancellations\n• Location & contact info\n• Pricing\n• Takeaway & delivery\n\nCould you rephrase your question, or would you like to call us at (555) 123-4567?",
+      "text": "I am not sure I understood that. I can help with opening hours, menu, reservations, location, contact info, pricing, takeaway, and delivery. You can also contact us at [phone number].",
       "typing": true
     },
     "createdOn": "2026-05-17T00:00:00.000Z",

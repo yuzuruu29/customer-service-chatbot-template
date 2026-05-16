@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PinoyBot | AI Chatbots for Filipino Small Businesses</title>
     <meta name="description" content="Automate your customer service with PinoyBot. The easiest chatbot solution for restaurants, clinics, salons, and local stores in the Philippines.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Lucide Icons. Replace with a local icon set if the demo must run fully offline. -->
+    <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
 </head>
-<body>
-
+<body id="top">
     <header>
         <div class="container">
             <nav>
-                <a href="#" class="logo">
+                <a href="#top" class="logo">
                     <i data-lucide="bot"></i> PinoyBot
                 </a>
                 <div class="nav-links">
@@ -23,27 +23,25 @@
                     <a href="#pricing">Pricing</a>
                     <a href="#faq">FAQ</a>
                 </div>
-                <a href="#contact" class="btn btn-primary">Get Started</a>
+                <a href="#contact" class="btn btn-primary nav-cta">Get Started</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section class="hero">
             <div class="container">
-                <img src="hero.png" alt="PinoyBot Hero" style="width: 100%; max-width: 400px; border-radius: 24px; margin-bottom: 24px; box-shadow: var(--shadow-lg);">
+                <img src="hero.png" alt="PinoyBot chatbot dashboard preview" class="hero-image">
                 <h1>Scale Your Business with AI Chatbots</h1>
                 <p>Provide instant customer service 24/7. Perfect for Pinoy restaurants, clinics, and local stores looking to automate bookings and FAQs.</p>
-                <div style="display: flex; gap: 16px; justify-content: center;">
+                <div class="hero-actions">
                     <a href="#demo" class="btn btn-primary">Try the Demo</a>
                     <a href="#pricing" class="btn btn-outline">View Pricing</a>
                 </div>
             </div>
         </section>
 
-        <!-- Features/Industries Section -->
-        <section id="features" style="padding: 80px 0;">
+        <section id="features" class="features">
             <div class="container">
                 <h2 style="text-align: center; margin-bottom: 48px;">Built for Every Business</h2>
                 <div class="pricing-grid">
@@ -53,7 +51,7 @@
                         <p style="font-size: 0.9rem; color: var(--text-muted);">Handle table reservations and menu inquiries automatically.</p>
                     </div>
                     <div class="card" style="text-align: center;">
-                        <i data-lucide="stetho-scope" style="color: var(--primary); width: 48px; height: 48px; margin-bottom: 16px;"></i>
+                        <i data-lucide="stethoscope" style="color: var(--primary); width: 48px; height: 48px; margin-bottom: 16px;"></i>
                         <h3>Clinics</h3>
                         <p style="font-size: 0.9rem; color: var(--text-muted);">Streamline appointment bookings and patient FAQs.</p>
                     </div>
@@ -66,28 +64,27 @@
             </div>
         </section>
 
-        <!-- Chatbot Demo Section -->
         <section id="demo" class="demo-section">
             <div class="container">
                 <h2 style="text-align: center; margin-bottom: 12px;">Experience PinoyBot</h2>
                 <p style="text-align: center; color: var(--text-muted); margin-bottom: 40px;">See how your customers would interact with your business.</p>
-                
+
                 <div class="mock-chat-window">
                     <div class="chat-header">
                         <div class="chat-avatar"><i data-lucide="bot"></i></div>
                         <div>
                             <div style="font-weight: 600;">PinoyBot Assistant</div>
-                            <div style="font-size: 0.75rem; opacity: 0.8;">Online | Active Now</div>
+                            <div style="font-size: 0.75rem; opacity: 0.8;">Demo Mode</div>
                         </div>
                     </div>
                     <div class="chat-body" id="chat-messages">
-                        <div class="message message-bot">Kamusta! I am your AI assistant. How can I help your business today?</div>
+                        <div class="message message-bot">Kamusta! I am your demo AI assistant. How can I help your business today?</div>
                         <div class="message message-user">Magkano po ang reservation fee?</div>
-                        <div class="message message-bot">Para sa mga table reservations, free lang po! For events, we require a small deposit. Gusto niyo po bang mag-book?</div>
+                        <div class="message message-bot">For this demo, table reservations are free. Replace this response with your real policy before launch.</div>
                     </div>
                     <div class="chat-footer">
-                        <input type="text" class="chat-input" placeholder="Type a message..." id="user-input">
-                        <button class="btn btn-primary" style="padding: 8px 16px;" id="send-btn">
+                        <input type="text" class="chat-input" placeholder="Type a message..." id="user-input" aria-label="Demo chat message">
+                        <button class="btn btn-primary icon-button" id="send-btn" aria-label="Send demo message">
                             <i data-lucide="send" style="width: 18px; height: 18px;"></i>
                         </button>
                     </div>
@@ -95,121 +92,118 @@
             </div>
         </section>
 
-        <!-- Botpress Embed Placeholder -->
-        <section style="padding: 60px 0; background: #f8fafc;">
+        <section id="botpress-setup" class="botpress-section">
             <div class="container">
                 <h2 style="text-align: center; margin-bottom: 24px;">Botpress Integration</h2>
-                <p style="text-align: center; max-width: 600px; margin: 0 auto 32px;">Ready to go live? Simply paste your Botpress Webchat embed code below.</p>
-                
+                <p style="text-align: center; max-width: 680px; margin: 0 auto 32px;">This demo does not ship with a live Botpress token. When your Botpress bot is published, replace the placeholder below with your own Webchat embed code.</p>
+
                 <!-- REPLACE THIS WITH YOUR BOTPRESS EMBED CODE -->
                 <div id="botpress-placeholder">
-                    &lt;!-- BOTPRESS EMBED CODE GOES HERE --&gt;<br>
-                    &lt;script src="https://cdn.botpress.cloud/webchat/v2/shareable.js"&gt;&lt;/script&gt;
+                    <strong>Botpress embed placeholder</strong><br>
+                    Paste the two script tags from Botpress Studio here before launch.
                 </div>
             </div>
         </section>
 
-        <!-- Pricing Section -->
         <section id="pricing" class="pricing">
             <div class="container">
                 <h2 style="text-align: center; margin-bottom: 12px;">Simple, Local Pricing</h2>
-                <p style="text-align: center; color: var(--text-muted);">Choose the plan that fits your business size.</p>
-                
+                <p style="text-align: center; color: var(--text-muted);">Example demo pricing. Replace these plans with the client's real offer before launch.</p>
+
                 <div class="pricing-grid">
                     <div class="card">
                         <h3>Sari-Sari</h3>
-                        <div class="price">₱0<span>/mo</span></div>
+                        <div class="price">PHP 0<span>/mo</span></div>
                         <p>Perfect for testing.</p>
                         <ul>
-                            <li><i data-lucide="check" style="width: 16px; color: green;"></i> 100 Messages/mo</li>
+                            <li><i data-lucide="check" style="width: 16px; color: green;"></i> 100 messages/mo</li>
                             <li><i data-lucide="check" style="width: 16px; color: green;"></i> Basic FAQs</li>
-                            <li><i data-lucide="check" style="width: 16px; color: green;"></i> Webchat Integration</li>
+                            <li><i data-lucide="check" style="width: 16px; color: green;"></i> Webchat integration</li>
                         </ul>
-                        <a href="#contact" class="btn btn-outline" style="width: 100%; text-align: center;">Get Started</a>
+                        <a href="#contact" class="btn btn-outline card-button">Get Started</a>
                     </div>
                     <div class="card featured">
                         <h3>Negosyo</h3>
-                        <div class="price">₱999<span>/mo</span></div>
+                        <div class="price">PHP 999<span>/mo</span></div>
                         <p>Best for growing stores.</p>
                         <ul>
-                            <li><i data-lucide="check" style="width: 16px; color: green;"></i> 2,000 Messages/mo</li>
-                            <li><i data-lucide="check" style="width: 16px; color: green;"></i> Appointment Booking</li>
-                            <li><i data-lucide="check" style="width: 16px; color: green;"></i> CRM Integration</li>
-                            <li><i data-lucide="check" style="width: 16px; color: green;"></i> Priority Support</li>
+                            <li><i data-lucide="check" style="width: 16px; color: green;"></i> 2,000 messages/mo</li>
+                            <li><i data-lucide="check" style="width: 16px; color: green;"></i> Appointment booking</li>
+                            <li><i data-lucide="check" style="width: 16px; color: green;"></i> CRM integration</li>
+                            <li><i data-lucide="check" style="width: 16px; color: green;"></i> Priority support</li>
                         </ul>
-                        <a href="#contact" class="btn btn-primary" style="width: 100%; text-align: center;">Go Pro</a>
+                        <a href="#contact" class="btn btn-primary card-button">Go Pro</a>
                     </div>
                     <div class="card">
                         <h3>Enterprise</h3>
                         <div class="price">Custom</div>
                         <p>For large franchises.</p>
                         <ul>
-                            <li><i data-lucide="check" style="width: 16px; color: green;"></i> Unlimited Messages</li>
-                            <li><i data-lucide="check" style="width: 16px; color: green;"></i> API Access</li>
-                            <li><i data-lucide="check" style="width: 16px; color: green;"></i> Dedicated Manager</li>
+                            <li><i data-lucide="check" style="width: 16px; color: green;"></i> Custom message volume</li>
+                            <li><i data-lucide="check" style="width: 16px; color: green;"></i> API access planning</li>
+                            <li><i data-lucide="check" style="width: 16px; color: green;"></i> Dedicated support option</li>
                         </ul>
-                        <a href="#contact" class="btn btn-outline" style="width: 100%; text-align: center;">Contact Sales</a>
+                        <a href="#contact" class="btn btn-outline card-button">Contact Sales</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- FAQ Section -->
         <section id="faq" class="faq">
             <div class="container">
                 <h2 style="text-align: center; margin-bottom: 48px;">Frequently Asked Questions</h2>
                 <div style="max-width: 800px; margin: 0 auto;">
                     <div class="faq-item">
-                        <div class="faq-question">
+                        <button class="faq-question" type="button">
                             Paano ito makakatulong sa business ko?
                             <i data-lucide="chevron-down"></i>
-                        </div>
+                        </button>
                         <div class="faq-answer">
                             Ang PinoyBot ay sumasagot sa mga paulit-ulit na tanong ng customers tulad ng "Magkano?" o "Saan kayo banda?" para makapag-focus ka sa pagpapatakbo ng business mo.
                         </div>
                     </div>
                     <div class="faq-item">
-                        <div class="faq-question">
+                        <button class="faq-question" type="button">
                             Kailangan ko ba ng coding skills?
                             <i data-lucide="chevron-down"></i>
-                        </div>
+                        </button>
                         <div class="faq-answer">
-                            Hindi po! Napakadali lang i-setup. Mayroon kaming setup guide para matulungan ka sa bawat step.
+                            Hindi po. Edit the text files, replace the Botpress embed, and follow the setup guide in the docs folder.
                         </div>
                     </div>
                     <div class="faq-item">
-                        <div class="faq-question">
+                        <button class="faq-question" type="button">
                             Pwede ba ito sa Tagalog?
                             <i data-lucide="chevron-down"></i>
-                        </div>
+                        </button>
                         <div class="faq-answer">
-                            Yes! Our AI understands Tagalog, English, and Taglish, ensuring your customers feel right at home.
+                            Yes. Add Tagalog and Taglish training phrases in the Botpress intent files before launch.
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
         <section id="contact" class="contact">
             <div class="container">
                 <h2 style="text-align: center; margin-bottom: 12px;">Get Your Chatbot Today</h2>
-                <p style="text-align: center; color: var(--text-muted); margin-bottom: 40px;">Send us a message and we'll help you set up.</p>
-                
+                <p style="text-align: center; color: var(--text-muted); margin-bottom: 40px;">This static demo form does not send email yet. Connect a form endpoint before using it on a client site.</p>
+
                 <form class="contact-form">
+                    <p class="form-note">Demo only: submissions are handled in the browser and are not saved or emailed.</p>
                     <div class="form-group">
-                        <label>Business Name</label>
-                        <input type="text" placeholder="e.g. Aling Nena's Kitchen">
+                        <label for="business-name">Business Name</label>
+                        <input type="text" id="business-name" name="businessName" placeholder="e.g. Aling Nena's Kitchen" required>
                     </div>
                     <div class="form-group">
-                        <label>Email Address</label>
-                        <input type="email" placeholder="you@example.com">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
                     </div>
                     <div class="form-group">
-                        <label>Message</label>
-                        <textarea rows="4" placeholder="How can we help you?"></textarea>
+                        <label for="message">Message</label>
+                        <textarea rows="4" id="message" name="message" placeholder="How can we help you?" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Inquiry</button>
+                    <button type="submit" class="btn btn-primary card-button">Preview Submission</button>
                 </form>
             </div>
         </section>
@@ -219,23 +213,23 @@
         <div class="container">
             <div class="footer-grid">
                 <div>
-                    <a href="#" class="footer-logo">PinoyBot</a>
+                    <a href="#top" class="footer-logo">PinoyBot</a>
                     <p style="color: #94a3b8; font-size: 0.9rem;">Empowering Filipino SMEs with affordable and accessible AI technology.</p>
                 </div>
                 <div class="footer-links">
                     <h4>Company</h4>
                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="../docs/setup-guide.md">Documentation</a></li>
+                        <li><a href="#features">Industries</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#botpress-setup">Botpress Setup</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
-                    <h4>Social</h4>
+                    <h4>Before Launch</h4>
                     <ul>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Twitter</a></li>
+                        <li>Replace demo pricing</li>
+                        <li>Add real social links</li>
+                        <li>Connect the contact form</li>
                     </ul>
                 </div>
             </div>
@@ -247,8 +241,9 @@
 
     <script src="main.js"></script>
     <script>
-        // Initialize Lucide icons
-        lucide.createIcons();
+        if (window.lucide) {
+            lucide.createIcons();
+        }
     </script>
 </body>
 </html>

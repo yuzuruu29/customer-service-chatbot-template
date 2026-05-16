@@ -24,6 +24,12 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     background-color: var(--background);
@@ -58,6 +64,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 16px;
     height: 72px;
 }
 
@@ -101,10 +108,21 @@ nav {
                 radial-gradient(circle at bottom left, #eff6ff, transparent);
 }
 
+.hero-image {
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 24px;
+    margin-bottom: 24px;
+    box-shadow: var(--shadow-lg);
+}
+
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 16px;
     line-height: 1.2;
+    overflow-wrap: break-word;
 }
 
 .hero p {
@@ -112,6 +130,13 @@ nav {
     color: var(--text-muted);
     max-width: 600px;
     margin: 0 auto 32px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 @media (min-width: 768px) {
@@ -129,6 +154,27 @@ nav {
     transition: all 0.2s;
     cursor: pointer;
     border: none;
+}
+
+.icon-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+}
+
+.card-button {
+    width: 100%;
+    text-align: center;
+}
+
+.features {
+    padding: 80px 0;
+}
+
+.botpress-section {
+    padding: 60px 0;
+    background: #f8fafc;
 }
 
 .btn-primary {
@@ -316,6 +362,11 @@ nav {
 }
 
 .faq-question {
+    width: 100%;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font: inherit;
     padding: 16px 24px;
     cursor: pointer;
     font-weight: 600;
@@ -350,6 +401,16 @@ nav {
     padding: 40px;
     border-radius: var(--radius);
     box-shadow: var(--shadow-md);
+}
+
+.form-note {
+    margin-bottom: 20px;
+    padding: 12px 14px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: #f8fafc;
+    color: var(--text-muted);
+    font-size: 0.9rem;
 }
 
 .form-group {
@@ -416,6 +477,10 @@ footer {
     transition: color 0.2s;
 }
 
+.footer-links li {
+    color: #94a3b8;
+}
+
 .footer-links a:hover {
     color: white;
 }
@@ -439,4 +504,67 @@ footer {
     text-align: center;
     color: #475569;
     font-family: monospace;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 18px;
+        overflow: hidden;
+    }
+
+    nav {
+        height: auto;
+        min-height: 68px;
+        padding: 12px 0;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .nav-cta {
+        padding: 10px 14px;
+        white-space: nowrap;
+    }
+
+    .hero,
+    .features,
+    .pricing,
+    .faq,
+    .contact {
+        padding: 56px 0;
+    }
+
+    .hero h1 {
+        font-size: 1.9rem;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: calc(100vw - 36px);
+    }
+
+    .hero-actions .btn {
+        flex: 1 1 140px;
+    }
+
+    .mock-chat-window {
+        max-width: 100%;
+    }
+
+    .chat-body {
+        height: 320px;
+    }
+
+    .chat-input {
+        min-width: 0;
+    }
+
+    .card,
+    .contact-form {
+        padding: 24px;
+    }
 }
