@@ -1,0 +1,136 @@
+{
+  "version": "0.1",
+  "id": "main",
+  "name": "main",
+  "location": "main.flow.json",
+  "startNode": "entry",
+  "catchAll": {
+    "next": []
+  },
+  "nodes": [
+    {
+      "id": "entry",
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_text-greeting"
+      ],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "router"
+        }
+      ],
+      "position": { "x": 100, "y": 100 }
+    },
+    {
+      "id": "router",
+      "name": "router",
+      "onEnter": [],
+      "onReceive": [
+        "intent == 'get_opening_hours' => node:opening-hours",
+        "intent == 'make_reservation' => node:reservation",
+        "intent == 'get_menu' => node:menu",
+        "intent == 'get_location' => node:location",
+        "intent == 'get_contact_info' => node:contact",
+        "intent == 'dietary_options' => node:dietary",
+        "intent == 'get_pricing' => node:pricing",
+        "intent == 'cancel_reservation' => node:cancel-reservation",
+        "intent == 'order_takeaway' => node:takeaway",
+        "intent == 'get_delivery_info' => node:delivery",
+        "true => node:fallback"
+      ],
+      "next": [],
+      "position": { "x": 300, "y": 100 }
+    },
+    {
+      "id": "opening-hours",
+      "name": "opening-hours",
+      "onEnter": ["say #!builtin_text-opening_hours"],
+      "onReceive": null,
+      "next": [{ "condition": "true", "node": "router" }],
+      "position": { "x": 500, "y": 50 }
+    },
+    {
+      "id": "reservation",
+      "name": "reservation",
+      "onEnter": ["say #!builtin_text-reservation_info"],
+      "onReceive": null,
+      "next": [{ "condition": "true", "node": "router" }],
+      "position": { "x": 500, "y": 130 }
+    },
+    {
+      "id": "menu",
+      "name": "menu",
+      "onEnter": ["say #!builtin_text-menu_info"],
+      "onReceive": null,
+      "next": [{ "condition": "true", "node": "router" }],
+      "position": { "x": 500, "y": 210 }
+    },
+    {
+      "id": "location",
+      "name": "location",
+      "onEnter": ["say #!builtin_text-location_info"],
+      "onReceive": null,
+      "next": [{ "condition": "true", "node": "router" }],
+      "position": { "x": 500, "y": 290 }
+    },
+    {
+      "id": "contact",
+      "name": "contact",
+      "onEnter": ["say #!builtin_text-contact_info"],
+      "onReceive": null,
+      "next": [{ "condition": "true", "node": "router" }],
+      "position": { "x": 500, "y": 370 }
+    },
+    {
+      "id": "dietary",
+      "name": "dietary",
+      "onEnter": ["say #!builtin_text-dietary_info"],
+      "onReceive": null,
+      "next": [{ "condition": "true", "node": "router" }],
+      "position": { "x": 500, "y": 450 }
+    },
+    {
+      "id": "pricing",
+      "name": "pricing",
+      "onEnter": ["say #!builtin_text-pricing_info"],
+      "onReceive": null,
+      "next": [{ "condition": "true", "node": "router" }],
+      "position": { "x": 500, "y": 530 }
+    },
+    {
+      "id": "cancel-reservation",
+      "name": "cancel-reservation",
+      "onEnter": ["say #!builtin_text-cancel_reservation_info"],
+      "onReceive": null,
+      "next": [{ "condition": "true", "node": "router" }],
+      "position": { "x": 500, "y": 610 }
+    },
+    {
+      "id": "takeaway",
+      "name": "takeaway",
+      "onEnter": ["say #!builtin_text-takeaway_info"],
+      "onReceive": null,
+      "next": [{ "condition": "true", "node": "router" }],
+      "position": { "x": 500, "y": 690 }
+    },
+    {
+      "id": "delivery",
+      "name": "delivery",
+      "onEnter": ["say #!builtin_text-delivery_info"],
+      "onReceive": null,
+      "next": [{ "condition": "true", "node": "router" }],
+      "position": { "x": 500, "y": 770 }
+    },
+    {
+      "id": "fallback",
+      "name": "fallback",
+      "onEnter": ["say #!builtin_text-fallback"],
+      "onReceive": null,
+      "next": [{ "condition": "true", "node": "router" }],
+      "position": { "x": 700, "y": 400 }
+    }
+  ],
+  "links": []
+}

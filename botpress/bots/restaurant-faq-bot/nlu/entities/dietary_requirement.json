@@ -1,0 +1,14 @@
+{
+  "name": "dietary_requirement",
+  "type": "list",
+  "fuzzy": true,
+  "values": [
+    { "name": "vegetarian", "synonyms": ["veggie", "no meat", "plant-based"] },
+    { "name": "vegan", "synonyms": ["plant-based", "no animal products"] },
+    { "name": "gluten_free", "synonyms": ["no gluten", "celiac", "coeliac", "GF"] },
+    { "name": "halal", "synonyms": ["halal certified", "islamic", "no pork"] },
+    { "name": "nut_free", "synonyms": ["nut allergy", "no nuts", "peanut free"] },
+    { "name": "dairy_free", "synonyms": ["no dairy", "lactose free", "lactose intolerant"] },
+    { "name": "kosher", "synonyms": ["jewish dietary", "kosher certified"] }
+  ]
+}

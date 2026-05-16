@@ -1,0 +1,27 @@
+{
+  "name": "dietary_options",
+  "contexts": ["global"],
+  "utterances": {
+    "en": [
+      "Do you have vegetarian options?",
+      "Are there vegan dishes on the menu?",
+      "Do you cater for gluten-free diets?",
+      "I'm lactose intolerant, what can I eat?",
+      "Do you have halal food?",
+      "Are there nut-free options?",
+      "Can you accommodate food allergies?",
+      "Is your food kosher?",
+      "Do you have low-calorie meals?",
+      "What options do you have for people with dietary restrictions?"
+    ]
+  },
+  "slots": [
+    {
+      "id": "dietary_requirement",
+      "name": "dietary_requirement",
+      "entity": "custom.dietary_requirement",
+      "color": 0,
+      "required": false
+    }
+  ]
+}

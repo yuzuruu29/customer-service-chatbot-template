@@ -1,0 +1,27 @@
+{
+  "name": "cancel_reservation",
+  "contexts": ["global"],
+  "utterances": {
+    "en": [
+      "I need to cancel my reservation",
+      "Can I cancel my booking?",
+      "I want to cancel my table",
+      "Cancel my reservation for tonight",
+      "How do I cancel a booking?",
+      "I can't make it, please cancel my table",
+      "Cancel my dinner reservation",
+      "I'd like to cancel my reservation for Friday",
+      "Is there a cancellation fee?",
+      "What's your cancellation policy?"
+    ]
+  },
+  "slots": [
+    {
+      "id": "reservation_date",
+      "name": "reservation_date",
+      "entity": "time",
+      "color": 0,
+      "required": false
+    }
+  ]
+}

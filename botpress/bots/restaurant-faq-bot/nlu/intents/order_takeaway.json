@@ -1,0 +1,19 @@
+{
+  "name": "order_takeaway",
+  "contexts": ["global"],
+  "utterances": {
+    "en": [
+      "Can I order takeaway?",
+      "Do you offer takeout?",
+      "I'd like to place a takeaway order",
+      "Can I pick up food from you?",
+      "Do you do click and collect?",
+      "Can I order food to go?",
+      "How do I order takeout?",
+      "Do you offer delivery or pickup?",
+      "I want to collect an order",
+      "Can I order online for pickup?"
+    ]
+  },
+  "slots": []
+}

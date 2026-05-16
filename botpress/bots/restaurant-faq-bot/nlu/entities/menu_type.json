@@ -1,0 +1,13 @@
+{
+  "name": "menu_type",
+  "type": "list",
+  "fuzzy": true,
+  "values": [
+    { "name": "lunch", "synonyms": ["midday", "midday menu", "lunch menu"] },
+    { "name": "dinner", "synonyms": ["evening", "dinner menu", "supper"] },
+    { "name": "kids", "synonyms": ["children", "children's menu", "kids menu"] },
+    { "name": "dessert", "synonyms": ["sweets", "pudding", "dessert menu"] },
+    { "name": "drinks", "synonyms": ["beverages", "wine list", "drinks menu"] },
+    { "name": "specials", "synonyms": ["daily specials", "today's specials", "chef's specials"] }
+  ]
+}

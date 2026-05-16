@@ -1,0 +1,19 @@
+{
+  "name": "get_opening_hours",
+  "contexts": ["global"],
+  "utterances": {
+    "en": [
+      "What are your opening hours?",
+      "When do you open?",
+      "When do you close?",
+      "What time does the restaurant open?",
+      "Are you open on weekends?",
+      "What are your hours of operation?",
+      "Are you open right now?",
+      "Do you open on Sundays?",
+      "What time do you open on Saturday?",
+      "When can I visit?"
+    ]
+  },
+  "slots": []
+}

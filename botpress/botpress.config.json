@@ -1,0 +1,27 @@
+{
+  "version": "12.0.0",
+  "metadata": {
+    "name": "restaurant-faq-bot",
+    "description": "A FAQ chatbot for restaurant inquiries",
+    "version": "1.0.0"
+  },
+  "modules": [
+    { "location": "MODULES_ROOT/nlu", "enabled": true },
+    { "location": "MODULES_ROOT/qna", "enabled": true },
+    { "location": "MODULES_ROOT/channel-web", "enabled": true }
+  ],
+  "dialog": {
+    "janitorInterval": "10s",
+    "timeoutInterval": "2m"
+  },
+  "logs": {
+    "expiration": "2 weeks"
+  },
+  "dataRetention": {
+    "janitorInterval": "15m",
+    "policies": {
+      "dialog": "30d",
+      "jwt": "6w"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "get_pricing",
+  "contexts": ["global"],
+  "utterances": {
+    "en": [
+      "How much does a meal cost?",
+      "What are your prices?",
+      "Is the restaurant expensive?",
+      "What's the average price per person?",
+      "How much is the set menu?",
+      "Do you have a budget-friendly menu?",
+      "What's the price range?",
+      "How much does a steak cost?",
+      "Are drinks included in the price?",
+      "Do you offer discounts?"
+    ]
+  },
+  "slots": []
+}

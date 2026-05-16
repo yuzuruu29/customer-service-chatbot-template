@@ -1,0 +1,19 @@
+{
+  "name": "get_location",
+  "contexts": ["global"],
+  "utterances": {
+    "en": [
+      "Where are you located?",
+      "What's your address?",
+      "How do I get to your restaurant?",
+      "Where is the restaurant?",
+      "Can you give me directions?",
+      "What city are you in?",
+      "Is there parking nearby?",
+      "Are you close to downtown?",
+      "What's the nearest landmark to you?",
+      "How far are you from the train station?"
+    ]
+  },
+  "slots": []
+}

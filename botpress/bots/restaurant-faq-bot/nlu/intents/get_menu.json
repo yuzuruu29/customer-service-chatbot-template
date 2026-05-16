@@ -1,0 +1,27 @@
+{
+  "name": "get_menu",
+  "contexts": ["global"],
+  "utterances": {
+    "en": [
+      "What's on the menu?",
+      "Can I see the menu?",
+      "What food do you serve?",
+      "Do you have a lunch menu?",
+      "What are your specials?",
+      "Can I get the dinner menu?",
+      "What dishes do you offer?",
+      "Show me your menu",
+      "Do you have a kids menu?",
+      "What cuisines do you serve?"
+    ]
+  },
+  "slots": [
+    {
+      "id": "menu_type",
+      "name": "menu_type",
+      "entity": "custom.menu_type",
+      "color": 0,
+      "required": false
+    }
+  ]
+}

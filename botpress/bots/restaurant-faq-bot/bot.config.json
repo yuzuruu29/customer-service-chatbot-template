@@ -1,0 +1,40 @@
+{
+  "version": "12.0.0",
+  "id": "restaurant-faq-bot",
+  "name": "Restaurant FAQ Bot",
+  "description": "Handles common restaurant inquiries: hours, menu, reservations, location, and more.",
+  "category": "Restaurant",
+  "details": {
+    "website": "",
+    "phoneNumber": "",
+    "termsConditions": "",
+    "privacyPolicy": ""
+  },
+  "author": "",
+  "license": "MIT",
+  "imports": {
+    "modules": [],
+    "contentTypes": [
+      "builtin_text",
+      "builtin_single-choice",
+      "builtin_card"
+    ]
+  },
+  "messaging": {},
+  "dialog": {
+    "timeoutInterval": "2m"
+  },
+  "logs": {
+    "expiration": "2 weeks"
+  },
+  "languages": ["en"],
+  "defaultLanguage": "en",
+  "locked": false,
+  "pipeline_status": {
+    "current_stage": {
+      "id": "prod",
+      "promoted_on": "2026-05-17T00:00:00.000Z",
+      "promoted_by": "admin"
+    }
+  }
+}

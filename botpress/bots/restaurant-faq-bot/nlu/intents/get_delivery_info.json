@@ -1,0 +1,19 @@
+{
+  "name": "get_delivery_info",
+  "contexts": ["global"],
+  "utterances": {
+    "en": [
+      "Do you deliver?",
+      "Can I get food delivered?",
+      "What's your delivery radius?",
+      "How long does delivery take?",
+      "What's the delivery fee?",
+      "Do you use Uber Eats or DoorDash?",
+      "Is there a minimum order for delivery?",
+      "Can you deliver to my address?",
+      "Do you offer free delivery?",
+      "How do I track my delivery?"
+    ]
+  },
+  "slots": []
+}

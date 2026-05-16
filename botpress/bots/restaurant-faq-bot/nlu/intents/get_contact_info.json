@@ -1,0 +1,19 @@
+{
+  "name": "get_contact_info",
+  "contexts": ["global"],
+  "utterances": {
+    "en": [
+      "How can I contact you?",
+      "What's your phone number?",
+      "Can I call the restaurant?",
+      "What's your email address?",
+      "How do I reach you?",
+      "Do you have a contact number?",
+      "I need to speak to someone",
+      "Can I talk to the manager?",
+      "Give me the restaurant's number",
+      "How do I get in touch?"
+    ]
+  },
+  "slots": []
+}
